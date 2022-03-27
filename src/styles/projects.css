@@ -1,0 +1,132 @@
+.projects {
+    background: var(--projects);
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    grid-template-columns: 4fr minmax(400px, 5fr);
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.projects-background--color {
+    height: 90%;
+    width: 30%;
+    background: var(--light);
+    margin-top: 50px;
+    border-radius: 80px;
+    justify-self: end
+}
+
+.projects-list {
+    grid-column-start: 2;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 90%;
+    width: 100%;
+}
+
+
+.project-name {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-end;
+    line-height: 5px;
+    width: 70%;
+}
+
+.project-name--h1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-name--h1 p {
+    padding-left: 20px;
+}
+
+.project-name--h1 a {
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.tech {
+    color: var(--orange);
+
+}
+
+.tech p {
+    display: inline;
+    margin: 0 5px;
+
+}
+
+.project-describe {
+    align-self: flex-start;
+}
+
+.project-describe p {
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+
+.projects-animation {
+    font-size: 80px;
+    font-weight: 600;
+    position: absolute;
+    top: 30vh;
+    left: 8vw;
+    animation: slide-side--left 1s;
+}
+
+
+@keyframes slide-side--left {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .projects-animation {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 680px) {
+    .projects-animation {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        padding-top: 60px;
+        height: 70vh;
+    }
+
+    .projects-list {
+        width: 90%;
+    }
+
+    .projects-animation {
+        top: 17vh;
+        left: 8vw;
+    }
+}
+
+@media (max-width:400px) {
+    .projects-list {
+        width: 90%;
+    }
+}

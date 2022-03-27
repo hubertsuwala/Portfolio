@@ -1,24 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+  Link,
+} from 'react-router-dom';
+import { useState } from 'react';
+import Header from './components/Header';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Projects from './components/pages/Projects';
+import Contact from './components/pages/Contact';
+import './styles/app.css';
 
 function App() {
+  const [background, setBackground] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className={`app ${background}`}>
+        <Header onBackground={setBackground} />
+        <Routes>
+          <Route
+            path="/Portfolio"
+            element={<Home onBackground={setBackground} />}
+          />
+          <Route
+            path="/Portfolio/about"
+            element={<About onBackground={setBackground} />}
+          />
+          <Route
+            path="/Portfolio/projects"
+            element={<Projects onBackground={setBackground} />}
+          />
+          <Route
+            path="/Portfolio/contact"
+            element={<Contact onBackground={setBackground} />}
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
