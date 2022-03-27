@@ -22,7 +22,7 @@ const Projects = ({ onBackground }) => {
             </a>
             <a
               target="_blank"
-              href="https://hubertsuwala.github.io/Portfolio/projects"
+              href="https://hubertsuwala.github.io/Portfolio"
               rel="noreferrer"
             >
               live
