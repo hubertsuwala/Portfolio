@@ -15,14 +15,14 @@ const Projects = ({ onBackground }) => {
           <div className="project-name--h1">
             <a
               target="_blank"
-              href="https://www.w3schools.com/"
+              href="https://github.com/hubertsuwala/Portfolio/tree/master"
               rel="noreferrer"
             >
-              surce
+              source
             </a>
             <a
               target="_blank"
-              href="https://www.w3schools.com/"
+              href="https://hubertsuwala.github.io/Portfolio/projects"
               rel="noreferrer"
             >
               live
@@ -43,7 +43,7 @@ const Projects = ({ onBackground }) => {
               href="https://www.w3schools.com/"
               rel="noreferrer"
             >
-              surce
+              source
             </a>
             <a
               target="_blank"
@@ -73,7 +73,7 @@ const Projects = ({ onBackground }) => {
               href="https://www.w3schools.com/"
               rel="noreferrer"
             >
-              surce
+              source
             </a>
             <a
               target="_blank"
