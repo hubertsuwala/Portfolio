@@ -70,14 +70,14 @@ const Projects = ({ onBackground }) => {
           <div className="project-name--h1">
             <a
               target="_blank"
-              href="https://www.w3schools.com/"
+              href="https://github.com/hubertsuwala/CV"
               rel="noreferrer"
             >
               source
             </a>
             <a
               target="_blank"
-              href="https://www.w3schools.com/"
+              href="https://hs-resume.netlify.app"
               rel="noreferrer"
             >
               live
