@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import BackgroundContext from '../store/background-context';
 import '../styles/header.css';
 
-const Header = ({ onBackground }) => {
+const Header = () => {
+  const setBackground = useContext(BackgroundContext);
   const [checked, setChecked] = useState(false);
 
   const headerClassName = checked ? 'active' : '';
 
   const check = () => {
     setChecked(!checked);
-    console.log('test');
   };
   return (
     <div className={`header ${headerClassName}`}>
@@ -18,7 +19,7 @@ const Header = ({ onBackground }) => {
         className="logo"
         onClick={() => {
           setChecked(false);
-          onBackground('home-background');
+          setBackground('home-background');
         }}
       >
         hsuwala
@@ -40,7 +41,7 @@ const Header = ({ onBackground }) => {
               to="/Portfolio/about"
               onClick={() => {
                 setChecked(false);
-                onBackground('about-background');
+                setBackground('about-background');
               }}
             >
               O mnie
@@ -52,7 +53,7 @@ const Header = ({ onBackground }) => {
               to="/Portfolio/projects"
               onClick={() => {
                 setChecked(false);
-                onBackground('projects-background');
+                setBackground('projects-background');
               }}
             >
               Projekty
@@ -64,7 +65,7 @@ const Header = ({ onBackground }) => {
               to="/Portfolio/contact"
               onClick={() => {
                 setChecked(false);
-                onBackground('contact-background');
+                setBackground('contact-background');
               }}
             >
               Kontakt

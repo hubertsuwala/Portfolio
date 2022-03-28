@@ -1,9 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import BackgroundContext from '../../store/background-context';
 import '../../styles/projects.css';
 
-const Projects = ({ onBackground }) => {
+const Projects = () => {
+  const setBackground = useContext(BackgroundContext);
   useEffect(() => {
-    onBackground('projects-background');
+    setBackground('projects-background');
   });
 
   return (
@@ -33,7 +35,10 @@ const Projects = ({ onBackground }) => {
             <p>React</p>
           </div>
           <div className="project-describe">
-            <p>Portfolio zawierajce najwaniejsze informacje o mnie </p>
+            <p>
+              Portfolio zawierajce najwaniejsze informacje o mnie, stworzone za
+              pomocą React, React Router
+            </p>
           </div>
         </li>
         <li className="project-name">

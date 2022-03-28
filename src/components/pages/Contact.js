@@ -1,11 +1,13 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons';
+import BackgroundContext from '../../store/background-context';
 
 import '../../styles/contact.css';
 
-const Contact = ({ onBackground }) => {
+const Contact = () => {
+  const setBackground = useContext(BackgroundContext);
   useEffect(() => {
-    onBackground('contact-background');
+    setBackground('contact-background');
   });
 
   return (

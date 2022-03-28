@@ -10,11 +10,12 @@
 
 .projects-background--color {
     height: 90%;
-    width: 30%;
+    width: 80px;
     background: var(--light);
     margin-top: 50px;
     border-radius: 80px;
-    justify-self: end
+    justify-self: end;
+    margin-left: 30px;
 }
 
 .projects-list {
@@ -32,7 +33,6 @@
 .project-name {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
     align-items: flex-end;
     line-height: 5px;
     width: 70%;
@@ -106,6 +106,10 @@
 @media (max-width: 680px) {
     .projects-animation {
         font-size: 50px;
+    }
+
+    .projects-background--color {
+        width: 50px;
     }
 }
 

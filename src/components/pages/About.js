@@ -1,9 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
+import BackgroundContext from '../../store/background-context';
 import '../../styles/about.css';
 
-const About = ({ onBackground }) => {
+const About = () => {
+  const setBackground = useContext(BackgroundContext);
   useEffect(() => {
-    onBackground('about-background');
+    setBackground('about-background');
   });
   return (
     <div className="about">
