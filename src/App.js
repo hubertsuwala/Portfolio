@@ -12,7 +12,7 @@ function App() {
   const [background, setBackground] = useState('');
 
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <BackgroundContext.Provider value={setBackground}>
         <div className={`app ${background}`}>
           <Header />
