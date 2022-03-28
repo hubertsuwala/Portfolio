@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div className={`header ${headerClassName}`}>
       <Link
-        to="/Portfolio"
+        to="/"
         className="logo"
         onClick={() => {
           setChecked(false);
@@ -38,7 +38,7 @@ const Header = () => {
           <li>
             <Link
               className="link"
-              to="/Portfolio/about"
+              to="/about"
               onClick={() => {
                 setChecked(false);
                 setBackground('about-background');
@@ -50,7 +50,7 @@ const Header = () => {
           <li>
             <Link
               className="link"
-              to="/Portfolio/projects"
+              to="/projects"
               onClick={() => {
                 setChecked(false);
                 setBackground('projects-background');
@@ -62,7 +62,7 @@ const Header = () => {
           <li>
             <Link
               className="link"
-              to="/Portfolio/contact"
+              to="/contact"
               onClick={() => {
                 setChecked(false);
                 setBackground('contact-background');
