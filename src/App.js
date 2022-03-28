@@ -17,10 +17,10 @@ function App() {
         <div className={`app ${background}`}>
           <Header />
           <Routes>
-            <Route path="/Portfolio" element={<Home />} />
-            <Route path="/Portfolio/about" element={<About />} />
-            <Route path="/Portfolio/projects" element={<Projects />} />
-            <Route path="/Portfolio/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </BackgroundContext.Provider>
