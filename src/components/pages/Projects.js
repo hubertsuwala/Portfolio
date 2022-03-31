@@ -45,14 +45,14 @@ const Projects = () => {
           <div className="project-name--h1">
             <a
               target="_blank"
-              href="https://www.w3schools.com/"
+              href="https://github.com/hubertsuwala/Pokedex-App"
               rel="noreferrer"
             >
               source
             </a>
             <a
               target="_blank"
-              href="https://www.w3schools.com/"
+              href="https://hubertsuwala.github.io/Pokedex-App/"
               rel="noreferrer"
             >
               live
@@ -66,8 +66,7 @@ const Projects = () => {
           <div className="project-describe">
             <p>
               Zabawa z Pokemonami, wczytanie z zewętrznego źródła i
-              przedstawienie ich w postaci listy, dodałem kilka filtrów dzięki,
-              którym poruszanie się po stronie jest znacznie prostsze.
+              przedstawienie ich w postaci listy,
             </p>
           </div>
         </li>
